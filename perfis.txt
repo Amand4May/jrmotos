@@ -1,0 +1,23 @@
+const perfis = {
+  pai: { 
+    nomeVendedor: 'Milton de Miranda Junior', 
+    cpfVendedor: '156.627.508-31', 
+    rgVendedor: '26.721.498-4', 
+    enderecoVendedor: 'Rua Atilio Silvano, Nº 544, Jardim Maria Eugênia, Sorocaba/SP - CEP: 18074-410.' 
+  },
+  mae: { 
+    nomeVendedor: 'Tiemi Sato de Miranda', 
+    cpfVendedor: '213.934.118-00', 
+    rgVendedor: ' ', 
+    enderecoVendedor: 'Rua Atilio Silvano, Nº 544, Jardim Maria Eugênia, Sorocaba/SP - CEP: 18074-410.' 
+  },
+  amanda: { 
+    nomeVendedor: 'Amanda Mayumi Sato de Miranda', 
+    cpfVendedor: ' ', 
+    rgVendedor: ' ', 
+    enderecoVendedor: 'Rua Atilio Silvano, Nº 544, Jardim Maria Eugênia, Sorocaba/SP - CEP: 18074-410.' 
+  },
+  vazio: { 
+    nomeVendedor: '', cpfVendedor: '', rgVendedor: '', enderecoVendedor: '' 
+  }
+};
