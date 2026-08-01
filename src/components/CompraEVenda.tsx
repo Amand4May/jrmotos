@@ -45,13 +45,13 @@ const perfis = {
 };
 
 const styles = StyleSheet.create({
-  page: { padding: 40, fontFamily: 'Helvetica', fontSize: 11, lineHeight: 1.5 },
-  title: { fontSize: 14, fontWeight: 'bold', textAlign: 'center', marginBottom: 20 },
-  paragraph: { marginBottom: 10, textAlign: 'justify' },
+  page: { padding: 30, fontFamily: 'Helvetica', fontSize: 11, lineHeight: 1.35 }, // Margens e espaçamento de linha reduzidos
+  title: { fontSize: 14, fontWeight: 'bold', textAlign: 'center', marginBottom: 15 },
+  paragraph: { marginBottom: 8, textAlign: 'justify' }, // Espaço entre os parágrafos um pouco menor
   bold: { fontFamily: 'Helvetica-Bold' },
-  signatureSection: { marginTop: 40, flexDirection: 'row', justifyContent: 'space-between' },
+  signatureSection: { marginTop: 25, flexDirection: 'row', justifyContent: 'space-between' }, // Menos espaço em branco antes de assinar
   signatureBox: { width: '45%', alignItems: 'center' },
-  signatureLine: { borderTop: '1px solid black', width: '100%', marginTop: 30, marginBottom: 5 }
+  signatureLine: { borderTop: '1px solid black', width: '100%', marginTop: 25, marginBottom: 5 }
 });
 
 const ContratoPDF = ({ data }: { data: DocumentFormData }) => {
@@ -110,7 +110,7 @@ const ContratoPDF = ({ data }: { data: DocumentFormData }) => {
 
         <Text style={[styles.paragraph, { marginTop: 20 }]}>Sorocaba, {dataExtenso}.</Text>
 
-        <View style={styles.signatureSection}>
+        <View style={styles.signatureSection} wrap={false}>
           <View style={styles.signatureBox}>
             <View style={styles.signatureLine} />
             <Text>{data.nomeVendedor ? data.nomeVendedor.toUpperCase() : 'NOME DO VENDEDOR'}</Text>

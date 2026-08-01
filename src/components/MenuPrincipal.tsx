@@ -1,5 +1,5 @@
 interface MenuProps {
-  mudarTela: (tela: 'menu' | 'compra-venda' | 'futuro') => void;
+  mudarTela: (tela: 'menu' | 'compra-venda' | 'procuracao') => void;
 }
 
 export default function MenuPrincipal({ mudarTela }: MenuProps) {
@@ -16,9 +16,9 @@ export default function MenuPrincipal({ mudarTela }: MenuProps) {
         </button>
 
         <button 
-          disabled
-          className="w-full bg-gray-200 text-gray-500 font-bold py-4 rounded-xl text-lg cursor-not-allowed border border-gray-300">
-          Em breve... (Novo Documento)
+          onClick={() => mudarTela('procuracao')}
+          className="cursor-pointer w-full bg-black hover:bg-gray-800 text-white font-bold py-4 rounded-xl text-lg transition duration-200 transform active:scale-[0.99] shadow-lg flex items-center justify-center">
+          Procuração de Transferência
         </button>
       </div>
     </div>
